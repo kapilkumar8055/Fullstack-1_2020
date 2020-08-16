@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-8</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #container{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        #header{
+            background-color:darkgrey;
+            height: 70px;
+            width: 98.7%;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position:fixed; 
+            top: 0;
+            z-index: 3; 
+            
+        }
+        #header ol{
+            list-style: none;
+            display: flex;
+            justify-content:space-evenly;
+        }
+        #header ol li{
+            display: inline-block;
+        }
+        #header ol li a{
+            text-decoration: none;
+            display: block;
+            color: white;
+            padding: 10px 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #header ol li :hover{
+            background-color: white;
+            color: black;
+        }
+        #banner{
+            margin-top: 100px;
+            height: 80%;
+            width: 100%;
+            /* position: relative; */
+        }
+        #banner img{
+            width: 100%;
+        }
+        #banner h1{
+            position: absolute;
+            top: 110px;
+            left: 20px;
+            color: white;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            text-align: center;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        
+        #circle-container{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: 5px;
+        }
+        
+        #circle-container img{
+            width: 23%;
+            height:340px;
+            background-color: darkgoldenrod;
+            margin: 5px;
+            border-radius: 50%;
+            float: left;
+        }
+        
+        
+        #content{
+            height: 510px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        #left-side{
+            width: 49.5%;
+            height: 500px;
+            background-color: darkgray;
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* display: flex; */
+            justify-content: space-evenly;
+            float: left;
+            font-size: 32px;
+            font-family: sans-serif;
+            color: white;
+            margin-right: 5px;
+            overflow: hidden;
+            text-align: justify;
+        }
+        #right-side{
+            width: 49%;
+            height: 500px;
+            justify-content: center;
+            align-items: center;
+            float: right;
+            margin-left: 5px;
+            
+            
+        }
+        .artical-1, .artical-2, .artical-3{
+            width: 100%;
+            height: 163px;
+            justify-content: center;
+            /* align-items: center; */
+            display: flex;
+            color: white;
+            font-size: 32px;
+            font-family: sans-serif;
+        }
+        .artical-1{
+            background-image: url(../images/p1.jpg);
+        }
+        .artical-2{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            background-image: url(../images/p2.jpeg);
+        }
+        .artical-3{
+            background-image: url(../images/p3.jpg);
+        }
+
+        #technologies{
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+        }
+        #technologies h1{
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        #technologies div{
+            width: 280px;
+            border: 1px;
+            background-color: white;
+            border-radius: 1pc;
+            float: left;
+            margin-left: 10px;
+            margin-right: 10px;
+            
+        }
+        #technologies img{
+            width:250px;
+            height: 175px;
+            border-radius: 1pc;
+            margin: 15px 15px 5px 15px;
+        }
+        #technologies h3{
+           text-align: center;
+           margin-top: 5px;
+           margin-bottom: 5px;
+        }
+        #technologies p{
+            text-align: justify;
+            margin: 10px 25px 10px 25px;
+            font-family:inherit;
+        }
+        #technologies a{
+            border: 1px;
+            padding: 10px 80px 10px 80px;
+            border-radius: 1pc;
+            background-color: red;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            display: block;
+            font-family: sans-serif;
+            margin:10px 20px 10px 20px;
+        }
+        #technologies a:hover{
+            background-color: blue;
+        }
+
+        #footer{
+            background-color:lightskyblue;
+            /* justify-content:center; */
+            /* display:flex; */
+            text-align:center;
+            height: 120px;
+            font-size: 30px;
+            font-family: sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <ol>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#aboutus">ABOUT US</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#tech">TECHNOLOGIES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ol>
+        </div>
+        <div id="banner">
+            <h1>PRACTICAL-8</h1>
+            <img src="../images/background.jpg" alt="">
+        </div>
+        <div id="team">
+            <h1>Team Members</h1>
+            <div id="circle-container">
+                <img src="../images/1.png" alt="">
+                <img src="../images/2.png" alt="">
+                <img src="../images/3.png" alt="">
+                <img src="../images/4.png" alt="">
+            </div>
+        </div>
+        <div id="aboutus">
+            <h1>About Us</h1>
+            <div id="content">
+                <div id="left-side"><h2>About Projects</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error a modi ut quas cupiditate mollitia quasi nihil eum dolore rerum praesentium aliquam, ea in vitae culpa, incidunt iure perferendis. Error, reiciendis exercitationem. Amet sed nobis voluptate, id sint perspiciatis iusto unde omnis assumenda nisi libero asperiores nemo dolorem iste? Ullam veniam commodi odio vitae earum? Ullam quia nesciunt omnis odit voluptates vero nostrum, nulla possimus deserunt, incidunt quis nemo perspiciatis? Ad voluptatum distinctio reprehenderit, ipsam nulla eaque ab voluptates velit culpa itaque modi nostrum odio quas tempore dolorum! Vel, consequuntur?</p></div>
+                    <div id="right-side">
+                        <div class="artical-1">Project-1</div>
+                        <div class="artical-2">Project-2</div>
+                        <div class="artical-3">Project-3</div>
+                    </div>
+                </div>
+            </div>
+            <h1 id="tech">Technologies Used</h1>
+            <div id="technologies">
+                <div>
+                    <img src="../images/Introduction-to-HTML.png" alt="HTML Introduction">
+                    <h3>Introduction to HTML</h3>
+                    <p>HTML stands for Hypertext Markup Language,
+                         and it is the most widely used language to write Web Pages.
+                         Hypertext refers to the way in which Web pages (HTML documents) are linked together.
+                          </p>
+                          
+                    <a href="https://kapilkumar8055.github.io/Fullstack-1_2020/pages/Practical-5Html.html" alt="HTML Introduction" target="_blank">Read More</a>
+                </div>
+                <div>
+                    <img src="../images/Introduction-To-CSS.jpg" alt="CSS Introduction">
+                    <h3>Introduction to CSS</h3>
+                    <p>CSS is short for Cascading Style Sheets, 
+                        and is the preferred way for setting the look and feel of a website.
+                        It controls the colors, fonts, and layouts of your website elements.
+                          </p>
+                          
+                    <a href="https://kapilkumar8055.github.io/Fullstack-1_2020/pages/Practical-5CSS.html" alt="CSS Introduction" target="_blank">Read More</a>
+                </div>
+                <div>
+                    <img src="../images/Introduction-To-javaScript.png" alt="JS Introduction">
+                    <h3>Introduction to JavaScript</h3>
+                    <p>Scripts are provided and executed as plain text. 
+                        They don’t need special preparation or compilation to run. 
+                        In this aspect, JavaScript is very different from another language called Java.
+                          </p>
+                          
+                    <a href="https://kapilkumar8055.github.io/Fullstack-1_2020/pages/Practical-5JS.html" alt="JS Introduction" target="_blank">Read More</a>
+                </div>
+                <div>
+                    <img src="../images/Introduction-To-BootStrap.jpg" alt="BootStrap Introduction">
+                    <h3>Introduction to BootStrap</h3>
+                    <p>Bootstrap is a free and open-source framework for creating websites and web applications. It's the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects.
+                          </p>
+                          
+                    <a href="https://kapilkumar8055.github.io/Fullstack-1_2020/pages/Practical-5BootStrap.html" alt="BootStrap Introduction" target="_blank">Read More</a>
+                </div>
+            </div>
+            <h1 id="contact">Contact</h1>
+            <div id="footer">
+                <br>
+                <h4>Website For Practical-8</h4>
+                <a href="#">Back To Top</a>
+            </div>
+        </div>
+    </body>
+    </html>
